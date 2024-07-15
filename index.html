@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	
+	Lightbox2 by Lokesh Dhakar https://lokeshdhakar.com/ (https://raw.githubusercontent.com/lokesh/lightbox2/master/LICENSE)
+-->
+<html>
+	<head>
+		<title>RJM Paintings</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/css/home.css" />
+		<link rel="stylesheet" href="static/css/lightbox-locked.css" />
+	</head>
+	<body class="is-preload">
+                    <div class="container">
+                        <h2><b>RJM Paintings</b></h2>
+                        <b>Contact: paintingsrjm@gmail.com</b>
+			<h6></h6>
+                    </div>
+		    <div class="sticky">
+                    </div>
+                    <h6><br></h6>
+                    <section id="photos">
+                        <a href="images/paintings/1.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/1.jpg" alt="" /></a>
+                        <a href="images/paintings/2.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/2.jpg" alt="" /></a>
+                        <a href="images/paintings/3.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/3.jpg" alt="" /></a>
+                        <a href="images/paintings/4.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/4.jpg" alt="" /></a>
+                        <a href="images/paintings/5.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/5.jpg" alt="" /></a>
+                        <a href="images/paintings/6.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/6.jpg" alt="" /></a>
+                        <a href="images/paintings/7.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/7.jpg" alt="" /></a>
+                        <a href="images/paintings/8.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/8.jpg" alt="" /></a>
+                        <a href="images/paintings/9.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/9.jpg" alt="" /></a>
+                        <a href="images/paintings/10.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/10.jpg" alt="" /></a>
+                        <a href="images/paintings/11.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/11.jpg" alt="" /></a>
+                        <a href="images/paintings/12.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/12.jpg" alt="" /></a>
+                        <a href="images/paintings/13.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/13.jpg" alt="" /></a>
+                        <a href="images/paintings/14.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/14.jpg" alt="" /></a>
+                        <a href="images/paintings/15.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/15.jpg" alt="" /></a>
+                        <a href="images/paintings/16.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/16.jpg" alt="" /></a>
+                        <a href="images/paintings/18.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/18.jpg" alt="" /></a>
+                        <a href="images/paintings/19.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/19.jpg" alt="" /></a>
+                        <a href="images/paintings/20.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/20.jpg" alt="" /></a>
+                        <a href="images/paintings/21.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/21.jpg" alt="" /></a>
+                        <a href="images/paintings/22.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/22.jpg" alt="" /></a>
+                        <a href="images/paintings/23.jpg" data-lightbox="test" data-title=""><img src="" class="lazy" data-src="images/paintings/23.jpg" alt="" /></a>
+                    </section>        
+            <script src='static/js/jquery-1.11.3.js'></script>
+            <script src='static/js/jquery.mobile-1.4.5.min.js'></script>
+            <script src="static/js/jquery.lazy.min.js"></script>
+            <script src="static/js/lightbox-locked.js"></script>
+            <script>
+            $.mobile.loading().hide();
+            </script>
+            <script>
+            $(function() {
+                $('.lazy').lazy({
+                    threshold: 500,
+                    effect: "fadeIn",
+                    effectTime: 400,
+                    enableThrottle: true,
+                    throttle: 50,
+                });
+            });
+            </script>
+            <script>
+                lightbox.option({
+                'showImageNumberLabel' : false,
+                'wrapAround': true,
+                'positionFromTop': 10,
+                'resizeDuration': 0,
+                'imageFadeDuration': 300,
+                'fadeDuration': 300,
+                'disableScrolling': true
+                })
+            </script>
+            <script>
+            function leftTrigger(){
+                    setTimeout(function(){
+                        $('.lightbox').on('swipeleft', leftHandler);
+
+                        function leftHandler(){
+                        $('.lb-next').click();
+                        }
+                    }, 0);
+                }
+
+                function rightTrigger(){
+                    setTimeout(function(){
+                        $('.lightbox').on('swiperight', leftHandler);
+
+                        function leftHandler(){
+                        $('.lb-prev').click();
+                        }
+                    }, 0);
+                }
+            
+                $('[data-lightbox]').on('click', function(){
+                    leftTrigger();
+                    rightTrigger();
+                    $('[data-lightbox]').off('click')
+                });
+            </script>
+	</body>
+</html>
